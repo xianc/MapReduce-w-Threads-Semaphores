@@ -1,0 +1,36 @@
+
+Enter on separte lines: 
+a. The number of Map Threads 
+b. The number of Reduce threads
+2
+1
+MT - Hashing 'my' to RT # 0
+Request: Buffer Adding 'my' ; Buffer Size 1
+MT - Hashing 'hello' to RT # 0
+MT - Hashing 'name' to RT # 0
+Request: Buffer Getting Object....  Word: 'my' ; Buffer Size: 0
+RT - Calculating Inverted Index... Here is the word: my
+Request: Buffer Adding 'hello' ; Buffer Size 1
+Request: Buffer Adding 'name' ; Buffer Size 2
+MT - Hashing 'world' to RT # 0
+MT - Hashing 'is' to RT # 0
+Request: Buffer Getting Object....  Word: 'name' ; Buffer Size: 1
+RT - Calculating Inverted Index... Here is the word: name
+Request: Buffer Adding 'is' ; Buffer Size 2
+Request: Buffer Adding 'world' ; Buffer Size 3
+MT - Hashing 'world' to RT # 0
+Request: Buffer Getting Object....  Word: 'world' ; Buffer Size: 2
+RT - Calculating Inverted Index... Here is the word: world
+Request: Buffer Adding 'world' ; Buffer Size 3
+Request: Buffer Getting Object....  Word: 'world' ; Buffer Size: 2
+MT - Hashing 'hello' to RT # 0
+RT - Calculating Inverted Index... Here is the word: world
+Request: Buffer Adding 'hello' ; Buffer Size 3
+Request: Buffer Getting Object....  Word: 'hello' ; Buffer Size: 2
+RT - Calculating Inverted Index... Here is the word: hello
+Request: Buffer Getting Object....  Word: 'is' ; Buffer Size: 1
+RT - Calculating Inverted Index... Here is the word: is
+Request: Buffer Getting Object....  Word: 'hello' ; Buffer Size: 0
+RT - Calculating Inverted Index... Here is the word: hello
+Reduce Thread #0's inverted index: {hello=[foo2.txt 5, foo1.txt 1], is=[foo2.txt 3], my=[foo2.txt 1], name=[foo2.txt 2], world=[foo1.txt 2, foo2.txt 4]}
+Global inverted index: {hello=[foo2.txt 5, foo1.txt 1], is=[foo2.txt 3], my=[foo2.txt 1], name=[foo2.txt 2], world=[foo1.txt 2, foo2.txt 4]}
